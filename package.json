@@ -1,0 +1,24 @@
+{
+  "name": "automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "cucumber": "^6.0.5",
+    "cypress": "^4.12.1",
+    "cypress-cucumber-preprocessor": "^2.5.4",
+    "cypress-xpath": "^1.6.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "scripts": {
+    "test": "cypress run tests/aa/PasswordReset.feature",
+    "cypress:open": "cypress open"
+  },
+  "author": "Saliya Gunawardena",
+  "license": "ISC",
+  "dependencies": {
+    "faker": "^4.1.0"
+  }
+}

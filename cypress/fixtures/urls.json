@@ -1,0 +1,6 @@
+{
+    "baseUrl": "http://localhost:3000",
+    "loginPageUrl": "http://localhost:3000/login",
+    "passwordRestPageUrl": "http://localhost:3000/forgot-password",
+    "userDetailsPageUrl": "http://localhost:3000/onboard"
+}
