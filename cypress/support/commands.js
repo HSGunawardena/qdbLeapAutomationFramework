@@ -24,33 +24,10 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
-Cypress.Commands.add('getLastEmail', email => {
-    function requestEmail() {
-      return cy
-        .request({
-          method: 'GET',
-          url: 'http://localhost:4003/last-email',
-          headers: {
-            'content-type': 'application/json',
-          },
-          qs: {
-            email,
-          },
-          json: true,
-        })
-        .then(({ body }) => {
-          if (body) {
-            return body;
-          }
-  
-          // If body is null, it means that no email was fetched for this address.
-          // We call requestEmail recursively until an email is fetched.
-          // We also wait for 300ms between each call to avoid spamming our server with requests
-          cy.wait(300);
-  
-          return requestEmail();
-        });
-    }
-  
-    return requestEmail();
-  });
+// TODO: This is a mail server for receiving the emails when sign up and reset password. Need to work on this to improve
+// const { MailSlurp } = require("mailslurp-client");
+// const mailslurp = new MailSlurp({apiKey: "7c34431a8d18fde5fbd657826eb03135a6a32923c1eace419158eb76808781b8"});
+
+// Cypress.Commands.add("createInbox", () => {
+//   return mailslurp.createInbox();
+// })

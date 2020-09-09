@@ -19,6 +19,7 @@
   "author": "Saliya Gunawardena",
   "license": "ISC",
   "dependencies": {
-    "faker": "^4.1.0"
+    "faker": "^4.1.0",
+    "mailslurp-client": "^8.7.8"
   }
 }

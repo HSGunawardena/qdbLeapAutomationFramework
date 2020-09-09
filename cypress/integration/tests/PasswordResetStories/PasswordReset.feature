@@ -9,7 +9,7 @@ Feature: Reset Password
     Scenario: Sending link to given email
         Given I am on the reset password screen
         When I enter my email address
-        Then a link should be sent a unique recovery link on my email
+        # Then a link should be sent a unique recovery link on my email
 
     # Scenario: Confirming the new password
     #     Given I have successfully received a link on my email to verify myself
