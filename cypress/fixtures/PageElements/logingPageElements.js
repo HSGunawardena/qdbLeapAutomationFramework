@@ -1,10 +1,9 @@
 export class LoginPageElements {
         titleElement = "";
         descriptionElement = "";
-        emailFieldElement = "";
-        passwordFieldElement = "";
+        emailFieldElement = '[data-testid=login-email]';
+        passwordFieldElement = '[data-testid=login-password]';
         rememeberMeCheckboxElement = "";
-        forgotPasswordLinkElement = "";
-        signInButtonElement = "";
-        linkElement = 'a[href="/forgot-password"]';
+        signInButtonElement = '[data-testid=login-submit]';
+        forgotPasswordLinkElement = 'a[href="/forgot-password"]';
 }
